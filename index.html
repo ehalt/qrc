@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code generator</title>
+    <!-- daisy khala -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main class="bg-white min-h-screen">
+        <section class="qr-body">
+            <div class="flex justify-center items-center min-h-screen ">
+                <div class="card bg-[#96CEB4] w-96 shadow-xl text-white">
+                    <div class="card-body">
+                        <div>
+                            <h2 class="card-title my-2 text-3xl text-white ">Generate your QRC</h2>
+                            <p class="my-2">type or paste some text to convert into QR Code</p>
+                            <textarea id="txtinput" class="textarea textarea-accent w-full"  name="" cols="30" rows="5"></textarea>
+                            <button id="generate" class="btn bg-primary w-full text-white">Generate</button>
+                        </div>
+                        <!-- qr code display -->
+                        <div id="qr-container" class="w-full h-auto p-3 bg-white hidden  flex justify-center">
+                            <div id="qr" >
+                                <img class="m-30" id="qrimg" src="#" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
